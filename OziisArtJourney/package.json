@@ -1,0 +1,20 @@
+{
+  "name": "oziisartjourney-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i src/input.css -o public/styles.css",
+    "watch": "tailwindcss -i src/input.css -o public/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  },
+  "dependencies": {
+    "js-user-country": "^1.0.1",
+    "lightgallery": "^2.7.1"
+  }
+}

@@ -1,0 +1,248 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../public/styles.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css"  />
+   
+
+    
+   
+</head>
+<body class="dark:bg-darkGray bg-babyPowder text-black dark:text-white overflow-x-hidden">
+
+    <nav class="relative  mx-auto pt-2 pb-2  pr-4 pl-4  bg-darkGray "> 
+        <!-- Desktop Nav -->
+      <div class="flex justify-between items-center">
+
+        <!-- dark theme toggle -->
+        <div class="flex flex-row   space-x-0 m-2 sm:m-0"> 
+          <img src="../asset/icons/sun.png" alt="" class="h-6 absolute sun cursor-pointer  md:scale-125">
+          <img src="../asset/icons/moon.png" alt="" class="h-6  moon cursor-pointer md:scale-125">
+        </div>
+
+         <!-- Logo -->
+         <div class="" >
+          <a href="../src/index.html"> <img src="../asset/icons/logo.png" alt="" class="w-24 sm:w-32 md:w-40 "></a>
+            
+        </div>
+
+        <div class="  ">  
+          <!-- Hamburger Icon -->
+          <button class="block hamburger sm:hidden focus:outline-none m-1 mt-3 " id="menu-btn">
+              <span class="hamburger-top d bg-white "></span> 
+              <span class="hamburger-bottom  bg-white"></span> 
+          </button>
+
+
+       </div>
+
+      </div>
+        
+
+
+        <div class="flex items-center justify-center  " id="desktop-nav">
+
+           
+            <!-- Menu Items -->
+
+            <div  >
+               <ul class="hidden sm:flex sm:space-x-4 md:space-x-8 ">
+                <li class="relative">
+                    <a href=""   class= " transition duration-400 ease-out   pt-1.5 pb-1.5 pl-4 pr-4  text-white    ">Shop <img src="../asset/icons/down-icon.png" alt=""  class=" h-4 inline"> </a>
+                    <ul class="  absolute bg-middleGray rounded-xl p-2  ">
+                        <li class="p-2 "><a href="http://" class="text-white  ">Originals</a></li> 
+                        <li class="p-2 "><a href="http://"  class="text-white">Local Shop</a>  </li>          
+                        <li class="p-2" ><a href="http://"   class="text-white"  >International Shop</a></li>
+                    </ul>
+                </li>
+
+                <!-- <li> <a href="" class="transition duration-400 ease-out hover:underline  ">Portfolio</a></li> -->
+                <li> <a href="" class="transition duration-400 ease-out hover:underline text-white ">Sketchbook</a></li>
+                <li><a href="" class="transition duration-400 ease-out hover:underline text-white">About </a></li>
+                <li> <a href="" class="transition duration-400 ease-out hover:underline text-white ">Contact</a></li> 
+               </ul>
+                
+               
+            </div>
+            
+        
+         
+
+         
+        </div>
+                <!-- Mobile Menu -->
+                <div class="sm:hidden">
+                    <div id="menu" class="absolute flex flex-col items-center pb-20 justify-center space-y-7 font-extralight text-4xl bg-babyPowder dark:bg-darkGray sm:w-auto sm:self-center left-0 w-full h-screen ">
+                        
+                        <span href="" id="mobile-shop-btn" class=" cursor-pointer pl-10 ">Shop 
+                            <img src="../asset/icons/dark-forward-icon.png" alt="" class=" h-8 hidden dark:inline"> 
+                            <img src="../asset/icons/forward-icon.png" alt="" class=" h-8 inline dark:hidden">
+                        </span> 
+                        <a href="" class="  ">Portfolio</a>
+                        <a href="" class="  ">About </a>
+                        <a href="" class="  ">Contact</a>
+
+                        <!-- Social Icons for dark & light mode in mobile view -->
+                        <div class="flex space-x-4 dark:hidden">
+                            <a href=""><img src="../asset/icons/Tiktok-icon.png" alt="" class="h-8"></a>
+                            <a href=""><img src="../asset/icons/Instagram-icon.png" alt="" class="h-8"></a>
+                            <a href=""><img src="../asset/icons/Twitter-icon.png" alt="" class="h-8"></a>  
+                        </div>
+                        <div class="dark:flex hidden space-x-4 ">
+                            <a href=""><img src="../asset/icons/dark-Tiktok-icon.png" alt="" class="h-8 "></a>
+                            <a href=""><img src="../asset/icons/dark-Instagram-icon.png" alt="" class="h-8 "></a>
+                            <a href=""><img src="../asset/icons/dark-Twitter-icon.png" alt="" class="h-8 " ></a>  
+                        </div>
+                    </div>
+                    <div id="mobile-shop-submenu" class="absolute flex flex-col items-center pb-20 bg-babyPowder dark:bg-darkGray  justify-center  space-y-7 font-extralight text-4xl  sm:self-center  left-0 w-full h-screen  ">
+                            <span  id="back-shop-btn" class="text-lighterGray cursor-pointer pr-8">  
+                                <img src="../asset/icons/backward-icon.png" alt="" class="inline h-10 "> 
+                                Back</span>  
+                            <a href="">Originals</a>
+                            <a href="">Local Shop</a>
+                            <a href="">International Shop</a>
+                    </div>  
+
+                </div>
+                  
+    </nav>
+    <!-- <div class="body-font container px-3  mx-auto  dark:text-white text-black " id="lightgallery" >
+       
+       
+        <ul class="grid grid-cols-1   gap-5 sm:grid-cols-2 md:grid-cols-3 filter-item">
+            <li data-item="pencil" class=" ">
+                <a href="../asset/images/icarud.JPG" target="_blank" class="bg-white rounded h-full text-grey-darkest no-underline shadow-md hover:opacity-80 ">
+                
+                    <img class="w-full  h-full block rounded-b gallery-image" src="../asset/images/icarud.JPG" alt="A photo of a woman">
+                </a>
+                    
+                 
+            </li>
+            <li  data-item="pencil" class="gallery-item">
+                <a href="../asset/images/icarud.JPG" target="_blank" class="bg-white rounded h-full text-grey-darkest no-underline shadow-md hover:opacity-80 ">
+                
+                    <img class="w-full  h-full block rounded-b gallery-image" src="../asset/images/icarud.JPG" alt="A photo of a woman">
+                </a>
+            </li>
+          <li  data-item="ink" >
+            <a href="https://unsplash.com/photos/TtybI0ORH7w" target="_blank" class="bg-white rounded h-full text-grey-darkest no-underline shadow-md hover:opacity-80 ">
+                
+                <img class="w-full  h-full block rounded-b" src="../asset/images/macbeth.JPG" alt="A photo of some reeds">
+            </a>
+          </li>
+           <li  data-item="ink">
+            <a href="https://unsplash.com/photos/tV_1sC603zA" target="_blank" class="bg-white rounded h-full text-grey-darkest no-underline shadow-md hover:opacity-80 ">
+                
+                <img class="w-full  h-full block rounded-b" src="../asset/images/romeo.JPG" alt="A photo of a man">
+            </a>
+           </li>
+           <li>
+            <a href="https://unsplash.com/photos/Ceuh97A6OYM" target="_blank" class="bg-white rounded h-full text-grey-darkest no-underline shadow-md hover:opacity-80 ">
+               
+                <img class="w-full  h-full block rounded-b" src="../asset/images/hamlet.JPG" alt="A photo of a forest">
+            </a>
+           </li>
+            <li>
+                <a href="https://unsplash.com/photos/mpw37yXc_WQ" target="_blank" class="bg-white rounded h-full text-grey-darkest no-underline shadow-md hover:opacity-80 ">
+                
+                    <img class="w-full  h-full block rounded-b" src="../asset/images/eyeliner-girl.JPG" alt="A photo of a bird">
+                </a>
+            </li>
+            
+            
+        </ul>
+    </div> -->
+    <div class="filter-menu flex justify-center space-x-5 my-8 gallery-filter">
+        <span  data-Filter="all" class="filter-item active current rounded-full px-4 py-2 cursor-pointer">all</span>
+        <span  data-Filter="ink" class="filter-item rounded-full  px-4  py-2 cursor-pointer">ink</span>
+        <span  data-Filter="pencil" class="filter-item rounded-full  px-4  py-2 cursor-pointer">pencil</span>
+        
+    </div>
+
+    <div id="lightgallery" class="body-font container grid grid-cols-1  gap-5 sm:grid-cols-2 md:grid-cols-3 px-3  mx-auto filter-item ">
+        <a href="../asset/gallery/Medussa.JPG"class="gallery-item pencil" data-sub-html=".caption">
+            <img alt="img1" src="../asset/gallery/Medussa.JPG" />
+            <div class="caption hidden">
+                <h1 class=" ">Black Medussa</h1>
+                <p>2021</p>
+            </div>
+        </a>
+        <a href="../asset/images/macbeth.JPG" class="gallery-item ink" >
+            <img alt="img2" src="../asset/images/macbeth.JPG" />
+        </a>
+        <a href="../asset/images/romeo.JPG" class="gallery-item ink">
+            <img alt="img2" src="../asset/images/romeo.JPG" />
+        </a>
+        <a href="../asset/images/macbeth.JPG" class="gallery-item" >
+            <img alt="img2" src="../asset/images/macbeth.JPG" />
+        </a>
+        <a href="../asset/images/hamlet.JPG" class="gallery-item ink">
+            <img alt="img2" src="../asset/images/hamlet.JPG" />
+        </a>
+        <a href="../asset/images/macbeth.JPG" >
+            <img alt="img2" src="../asset/images/macbeth.JPG" />
+        </a>
+        <a href="../asset/images/macbeth.JPG" >
+            <img alt="img2" src="../asset/images/macbeth.JPG" />
+        </a>
+        <a href="../asset/images/macbeth.JPG" >
+            <img alt="img2" src="../asset/images/macbeth.JPG" />
+        </a>
+        <a href="../asset/images/macbeth.JPG" >
+            <img alt="img2" src="../asset/images/macbeth.JPG" />
+        </a>
+        <a href="../asset/images/macbeth.JPG" >
+            <img alt="img2" src="../asset/images/macbeth.JPG" />
+        </a>
+        <a href="../asset/images/macbeth.JPG" >
+            <img alt="img2" src="../asset/images/macbeth.JPG" />
+        </a>
+        <a href="../asset/images/macbeth.JPG" >
+            <img alt="img2" src="../asset/images/macbeth.JPG" />
+        </a>
+        <a href="../asset/images/macbeth.JPG" >
+            <img alt="img2" src="../asset/images/macbeth.JPG" />
+        </a>
+        <a href="../asset/images/macbeth.JPG" >
+            <img alt="img2" src="../asset/images/macbeth.JPG" />
+        </a>
+    
+    </div>
+    
+   <!-- Back to top button -->
+   <button
+   type="button"
+   data-mdb-ripple="true"
+   data-mdb-ripple-color="light"
+   class="inline-block p-3 bg-white text-black font-medium text-xs leading-tight  rounded-full shadow-md hover:bg-black hover:text-white  hover:shadow-2xl   transition duration-150 ease-in-out hidden bottom-5 right-5 fixed"
+   id="btn-back-to-top"
+   >
+   <svg
+     aria-hidden="true"
+     focusable="false"
+     data-prefix="fas"
+     class="w-4 h-4"
+     role="img"
+     xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 448 512"
+   >
+     <path
+       fill="currentColor"
+       d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+     ></path>
+   </svg>
+   </button>
+ 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js" ></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/mediumZoom/lg-medium-zoom.min.js" integrity="sha512-nMuTAVO/JX4krfPgOYQrnQrGknkoLXsvepoXIIRc2LHF8/PWTTxfaIm59GzMIvcLjkfbgPR6EsunU4gQcMC9Ng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/script.js"></script>     
+    <script src="../js/portfolio.js"></script> 
+
+   
+
+    
+</body>
+</html>

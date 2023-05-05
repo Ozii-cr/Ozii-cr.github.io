@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="../public/styles.css ">
+</head>
+<body class="dark:bg-darkGray bg-babyPowder text-black dark:text-white overflow-x-hidden">
+    <nav class="relative  mx-auto pt-2 pb-2  pr-4 pl-4  bg-darkGray "> 
+        <!-- Desktop Nav -->
+      <div class="flex justify-between items-center">
+
+        <!-- dark theme toggle -->
+        <div class="flex flex-row   space-x-0 m-2 sm:m-0"> 
+          <img src="../asset/icons/sun.png" alt="" class="h-6 absolute sun cursor-pointer  md:scale-125">
+          <img src="../asset/icons/moon.png" alt="" class="h-6  moon cursor-pointer md:scale-125">
+        </div>
+
+         <!-- Logo -->
+         <div class="" >
+          <a href="../src/index.html"> <img src="../asset/icons/logo.png" alt="" class="w-24 sm:w-32 md:w-40 "></a>
+            
+        </div>
+
+        <div class="  ">  
+          <!-- Hamburger Icon -->
+          <button class="block hamburger sm:hidden focus:outline-none m-1 mt-3 " id="menu-btn">
+              <span class="hamburger-top d bg-white "></span> 
+              <span class="hamburger-bottom  bg-white"></span> 
+          </button>
+
+
+       </div>
+
+      </div>
+        
+
+
+        <div class="flex items-center justify-center  " id="desktop-nav">
+
+           
+            <!-- Menu Items -->
+
+            <div  >
+               <ul class="hidden sm:flex sm:space-x-4 md:space-x-8 ">
+                <li class="relative">
+                    <a href=""   class= " transition duration-400 ease-out   pt-1.5 pb-1.5 pl-4 pr-4  text-white    ">Shop <img src="../asset/icons/down-icon.png" alt=""  class=" h-4 inline"> </a>
+                    <ul class="  absolute bg-middleGray rounded-xl p-2  ">
+                        <li class="p-2 "><a href="http://" class="text-white  ">Originals</a></li> 
+                        <li class="p-2 "><a href="http://"  class="text-white">Local Shop</a>  </li>          
+                        <li class="p-2" ><a href="http://"   class="text-white"  >International Shop</a></li>
+                    </ul>
+                </li>
+
+                <!-- <li> <a href="" class="transition duration-400 ease-out hover:underline  ">Portfolio</a></li> -->
+                <li> <a href="" class="transition duration-400 ease-out hover:underline text-white ">Sketchbook</a></li>
+                <li><a href="" class="transition duration-400 ease-out hover:underline text-white">About </a></li>
+                <li> <a href="" class="transition duration-400 ease-out hover:underline text-white ">Contact</a></li> 
+               </ul>
+                
+               
+            </div>
+            
+        
+         
+
+         
+        </div>
+                <!-- Mobile Menu -->
+                <div class="sm:hidden">
+                    <div id="menu" class="absolute flex flex-col items-center pb-20 justify-center space-y-7 font-extralight text-4xl bg-babyPowder dark:bg-darkGray sm:w-auto sm:self-center left-0 w-full h-screen ">
+                        
+                        <span href="" id="mobile-shop-btn" class=" cursor-pointer pl-10 ">Shop 
+                            <img src="../asset/icons/dark-forward-icon.png" alt="" class=" h-8 hidden dark:inline"> 
+                            <img src="../asset/icons/forward-icon.png" alt="" class=" h-8 inline dark:hidden">
+                        </span> 
+                        <a href="" class="  ">Portfolio</a>
+                        <a href="" class="  ">About </a>
+                        <a href="" class="  ">Contact</a>
+
+                        <!-- Social Icons for dark & light mode in mobile view -->
+                        <div class="flex space-x-4 dark:hidden">
+                            <a href=""><img src="../asset/icons/Tiktok-icon.png" alt="" class="h-8"></a>
+                            <a href=""><img src="../asset/icons/Instagram-icon.png" alt="" class="h-8"></a>
+                            <a href=""><img src="../asset/icons/Twitter-icon.png" alt="" class="h-8"></a>  
+                        </div>
+                        <div class="dark:flex hidden space-x-4 ">
+                            <a href=""><img src="../asset/icons/dark-Tiktok-icon.png" alt="" class="h-8 "></a>
+                            <a href=""><img src="../asset/icons/dark-Instagram-icon.png" alt="" class="h-8 "></a>
+                            <a href=""><img src="../asset/icons/dark-Twitter-icon.png" alt="" class="h-8 " ></a>  
+                        </div>
+                    </div>
+                    <div id="mobile-shop-submenu" class="absolute flex flex-col items-center pb-20 bg-babyPowder dark:bg-darkGray  justify-center  space-y-7 font-extralight text-4xl  sm:self-center  left-0 w-full h-screen  ">
+                            <span  id="back-shop-btn" class="text-lighterGray cursor-pointer pr-8">  
+                                <img src="../asset/icons/backward-icon.png" alt="" class="inline h-10 "> 
+                                Back</span>  
+                            <a href="">Originals</a>
+                            <a href="">Local Shop</a>
+                            <a href="">International Shop</a>
+                    </div>  
+
+                </div>
+                  
+    </nav>
+<div class="flex flex-col md:flex-row m-2">
+
+    <div class="w-full md:w-1/2  md:ml-6 fade transition duration-300 ease-in ">
+        <img src="../asset/images/about.jpg" alt="" >
+
+    </div>
+    <div class="w-full md:w-1/2 container md:text-lg mt-2 bg-opacity-80 sm:mt-32 bg-earthGreen h-fit p-5 md:mr-6 rounded-3xl fade transition duration-300 ease-in delay-300">
+        <p>
+            Jackie Liu (she/her) is a 19-year-old figurative artist from the Greater Boston area studying Art Practice and Philosophy at Stanford University.
+             Her oil and acrylic paintings serve as intimate memoir-like vignettes, traversing themes of trauma, 
+             identity, and resilience. 
+             By articulating and sharing her own stories, she aims to celebrate vulnerability, foster communion,
+             and invite conversation around the stigmatized facets of the human experience.
+
+        </p>
+    </div  >
+    
+
+</div>
+
+ 
+    
+
+</body>
+
+    <script src="../js/script.js"></script>  
+</body>
+</html>

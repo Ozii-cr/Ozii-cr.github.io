@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @keyframes fade-in-slide-up{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+
+
+    } 100%{
+        
+        transform: translateY(0%) ;
+    }
+}
+
+@keyframes fade-out-slide-down{
+    0%{
+        opacity: 1;
+                    
+    }100%{
+        opacity: 0;
+        transform: translateY(100%) ;
+    }
+}
+
+@keyframes slide-out-left{
+    0%{
+       
+      transform: translateX(0%);
+
+
+    } 100%{
+        
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-in-right{
+    0%{
+       
+        transform: translateX(-100%);
+
+
+    } 100%{
+        
+        transform: translateX(0%);
+    }
+} */
+
+
+/* nav{
+    background-image: url('../asset/icons/backdrop.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top;
+  
+
+} */
+
+.forward-arrow{
+    cursor: pointer;
+    width: 35px;
+    height: 2px;  
+}
+
+/* Hamburger Menu */
+.hamburger{
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 100;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* .hamburger-middle{
+    transform: translateY(7px);
+} */
+
+.hamburger-bottom{
+    transform: translateY(10px);
+
+}
+
+
+/* .open .hamburger-middle{
+    transform: translateY(6px);
+    opacity: 0;
+    
+} */
+
+
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+/* Mobile menu animation for sliding up on clicking the hamburger icon */
+#menu{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;  
+    transform: translateY(100%);
+    z-index: 5;
+  
+    
+
+}
+#menu.open{
+    opacity: 1;
+    
+    visibility: visible;
+    transform: translateY(0%) translateX(0%);
+    z-index: 5;
+    
+}
+
+/* Animation for sliding the main menu to the left on the screen on clicking the shop Sub menu */
+#menu.open.openSubMenu{   
+    transform: translateX(-100%);  
+    
+    
+}
+
+/* Animation for sliding in from the left the sub Menu */
+#mobile-shop-submenu{   
+    transform: translateX(100%); 
+   transition: all 0.3s  ease;
+   transition-delay: 0.1s;  
+    z-index: 5;  
+    visibility: hidden;
+
+    
+           
+}
+
+#mobile-shop-submenu.open{
+    transform:translateX(0%) ; 
+    
+    visibility: visible;
+   
+}
+
+/* Animation fro sliding in and out the submenu on clicking the hamburger icon */
+#mobile-shop-submenu.open.openHam{
+    transition: all 0.3s  ease; 
+    transform: translatey(100%);  
+    opacity: 0;
+    visibility: hidden;
+   
+ }
+
+
+
+
+/* Light mode and dark mode icon animation */
+.moon {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    
+}
+.sun {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    
+}
+
+.showIcon.sun{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(5px);
+    transform: translateY(5px);
+
+}
+
+.showIcon.moon{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+}
+
+ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s  ease;
+    width: max-content;
+
+
+}
+ ul li:hover ul{ 
+    visibility: visible;
+    opacity: 1; 
+   
+    z-index: 5;
+    
+
+}
+
+
+ul li ul li:hover{ 
+    background-color: #6c6c6c ;
+    
+
+}
+
+.img-card{
+    aspect-ratio: 4/3;
+}
+
+/* Animating on scroll */
+.fade{
+    opacity: 0;
+    transform: translateY(40px);
+    
+}
+
+.fade.appear{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.slide{
+    opacity: 0;
+    transform: translateX(-10%);
+    transition: all 300ms linear;
+}
+
+.slide.appear{
+   opacity: 1;
+    transform: translateX(0%);
+
+}
+/* 
+.blurry{
+    filter: blur(5px);
+    transition: all 100ms ease-in;
+}
+.blurry.appear{
+    filter: blur(0px);
+} */
+
+
+/* Portfolio filter  */
+.filter-item li.active{
+display: block;
+}
+
+.filter-item li.delete{
+   display: none;
+    
+}
+
+.filter-menu li.current{
+    background-color: #16a34a;
+}
+
+
+ .gallery-filter .filter-item.active{
+    background-color: #16a34a;
+  }
+
+  .gallery-filter .filter-item{
+    background-color: transparent;
+  }
+.gallery-item.hide{
+    display: none;
+  }
+
+
+  .gallery-item.show{
+    animation: fadeIn 0.5s ease;
+  }
+  @keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+/* #desktop-nav.scroll-down {
+    transform: translate3d(0, -100%,0);
+    transition: all 500ms;
+}
+
+#desktop-nav.scroll-up{  
+    transition: all 500ms;
+} */
+
+/* .primary-card{
+    background-image: url(../asset/images/hamlet.JPG);
+    animation: change infinite ease-in-out 5s ;
+}
+
+@keyframes change{
+    0%{
+        background-image: url(../asset/images/hamlet.JPG);
+
+
+    }50%{
+        
+        background-image: url(../asset/images/romeo.JPG);
+    }
+    
+    100%{
+        
+        background-image: url(../asset/images/icarud.JPG );
+    }
+
+} */

@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="../public/styles.css ">
+</head>
+<body class="dark:bg-darkGray bg-babyPowder text-black dark:text-white overflow-x-hidden ">
+    <nav class="relative  mx-auto pt-2 pb-2  pr-4 pl-4  bg-darkGray "> 
+        <!-- Desktop Nav -->
+      <div class="flex justify-between items-center">
+
+        <!-- dark theme toggle -->
+        <div class="flex flex-row   space-x-0 m-2 sm:m-0"> 
+          <img src="../asset/icons/sun.png" alt="" class="h-6 absolute sun cursor-pointer  md:scale-125">
+          <img src="../asset/icons/moon.png" alt="" class="h-6  moon cursor-pointer md:scale-125">
+        </div>
+
+         <!-- Logo -->
+         <div class="" >
+          <a href="../src/index.html"> <img src="../asset/icons/logo.png" alt="" class="w-24 sm:w-32 md:w-40 "></a>
+            
+        </div>
+
+        <div class="  ">  
+          <!-- Hamburger Icon -->
+          <button class="block hamburger sm:hidden focus:outline-none m-1 mt-3 " id="menu-btn">
+              <span class="hamburger-top d bg-white "></span> 
+              <span class="hamburger-bottom  bg-white"></span> 
+          </button>
+
+
+       </div>
+
+      </div>
+        
+
+
+        <div class="flex items-center justify-center  " id="desktop-nav">
+
+           
+            <!-- Menu Items -->
+
+            <div  >
+               <ul class="hidden sm:flex sm:space-x-4 md:space-x-8 ">
+                <li class="relative">
+                    <a href=""   class= " transition duration-400 ease-out   pt-1.5 pb-1.5 pl-4 pr-4  text-white    ">Shop <img src="../asset/icons/down-icon.png" alt=""  class=" h-4 inline"> </a>
+                    <ul class="  absolute bg-middleGray rounded-xl p-2  ">
+                        <li class="p-2 "><a href="http://" class="text-white  ">Originals</a></li> 
+                        <li class="p-2 "><a href="http://"  class="text-white">Local Shop</a>  </li>          
+                        <li class="p-2" ><a href="http://"   class="text-white"  >International Shop</a></li>
+                    </ul>
+                </li>
+
+                <!-- <li> <a href="" class="transition duration-400 ease-out hover:underline  ">Portfolio</a></li> -->
+                <li> <a href="" class="transition duration-400 ease-out hover:underline text-white ">Sketchbook</a></li>
+                <li><a href="" class="transition duration-400 ease-out hover:underline text-white">About </a></li>
+                <li> <a href="" class="transition duration-400 ease-out hover:underline text-white ">Contact</a></li> 
+               </ul>
+                
+               
+            </div>
+            
+        
+         
+
+         
+        </div>
+                <!-- Mobile Menu -->
+                <div class="sm:hidden">
+                    <div id="menu" class="absolute flex flex-col items-center pb-20 justify-center space-y-7 font-extralight text-4xl bg-babyPowder dark:bg-darkGray sm:w-auto sm:self-center left-0 w-full h-screen ">
+                        
+                        <span href="" id="mobile-shop-btn" class=" cursor-pointer pl-10 ">Shop 
+                            <img src="../asset/icons/dark-forward-icon.png" alt="" class=" h-8 hidden dark:inline"> 
+                            <img src="../asset/icons/forward-icon.png" alt="" class=" h-8 inline dark:hidden">
+                        </span> 
+                        <a href="" class="  ">Portfolio</a>
+                        <a href="" class="  ">About </a>
+                        <a href="" class="  ">Contact</a>
+
+                        <!-- Social Icons for dark & light mode in mobile view -->
+                        <div class="flex space-x-4 dark:hidden">
+                            <a href=""><img src="../asset/icons/Tiktok-icon.png" alt="" class="h-8"></a>
+                            <a href=""><img src="../asset/icons/Instagram-icon.png" alt="" class="h-8"></a>
+                            <a href=""><img src="../asset/icons/Twitter-icon.png" alt="" class="h-8"></a>  
+                        </div>
+                        <div class="dark:flex hidden space-x-4 ">
+                            <a href=""><img src="../asset/icons/dark-Tiktok-icon.png" alt="" class="h-8 "></a>
+                            <a href=""><img src="../asset/icons/dark-Instagram-icon.png" alt="" class="h-8 "></a>
+                            <a href=""><img src="../asset/icons/dark-Twitter-icon.png" alt="" class="h-8 " ></a>  
+                        </div>
+                    </div>
+                    <div id="mobile-shop-submenu" class="absolute flex flex-col items-center pb-20 bg-babyPowder dark:bg-darkGray  justify-center  space-y-7 font-extralight text-4xl  sm:self-center  left-0 w-full h-screen  ">
+                            <span  id="back-shop-btn" class="text-lighterGray cursor-pointer pr-8">  
+                                <img src="../asset/icons/backward-icon.png" alt="" class="inline h-10 "> 
+                                Back</span>  
+                            <a href="">Originals</a>
+                            <a href="">Local Shop</a>
+                            <a href="">International Shop</a>
+                    </div>  
+
+                </div>
+                  
+    </nav>
+
+    <section class="text-gray-500 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 dark:text-white">Contact Us</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-900 dark:text-white">Feel free to send any message.</p>
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <form class="flex flex-wrap -m-2" name="submit-to-google-sheet">
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="name" class="leading-7 text-sm text-gray-600 dark:text-white">Name</label>
+                  <input required type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="email" class="leading-7 text-sm text-gray-600 dark:text-white">Email</label>
+                  <input required type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="message" class="leading-7 text-sm text-gray-600 dark:text-white">Message</label>
+                  <textarea required id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <button type="submit" class="flex mx-auto text-white bg-green-600 border-0 py-2 px-8 focus:outline-none hover:bg-green-700 rounded-full text-lg ">Send</button>
+              </div>
+              
+                <span id="msgContact" class="mx-auto  text-BlueViolet"></span>
+             
+              <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                <a class="text-green-600">oziisartjourney@gmail.com</a>
+                <p class="leading-normal my-5">The journey never ends
+                  
+                </p>
+                <span class="inline-flex">
+                  <a class="text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                  </a>
+                  <a class="ml-4 text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                    </svg>
+                  </a>
+                  <a class="ml-4 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                  </a>
+                  <a class="ml-4 text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby_wvtF1Fx-s84gVdq84BBS2NuzwIfM09r6MmrSYggfqCxsVx2XQ2VaDQyjlcxcFYjN/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msgContact = document.getElementById("msgContact")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msgContact.innerHTML = "Message sent successfully"
+              setTimeout(function(){
+                msgContact.innerHTML = ""
+              },5000)
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script src="../js/script.js"></script>  
+</body>
+
+</html>
+
+
