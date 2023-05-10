@@ -51,8 +51,8 @@
                     <a href=""   class= " transition duration-400 ease-out   pt-1.5 pb-1.5 pl-4 pr-4  text-white    ">Shop <img src="../asset/icons/down-icon.png" alt=""  class=" h-4 inline"> </a>
                     <ul class="  absolute bg-middleGray rounded-xl p-2  ">
                         <li class="p-2 "><a href="http://" class="text-white  ">Originals</a></li> 
-                        <li class="p-2 "><a href="http://"  class="text-white">Local Shop</a>  </li>          
-                        <li class="p-2" ><a href="http://"   class="text-white"  >International Shop</a></li>
+                        <li class="p-2 "><a href="http://"  class="text-white">Prints</a>  </li>          
+                        <li class="p-2" ><a href="http://"   class="text-white"  >Apparell</a></li>
                     </ul>
                 </li>
 
@@ -84,14 +84,14 @@
 
                         <!-- Social Icons for dark & light mode in mobile view -->
                         <div class="flex space-x-4 dark:hidden">
-                            <a href=""><img src="../asset/icons/Tiktok-icon.png" alt="" class="h-8"></a>
-                            <a href=""><img src="../asset/icons/Instagram-icon.png" alt="" class="h-8"></a>
-                            <a href=""><img src="../asset/icons/Twitter-icon.png" alt="" class="h-8"></a>  
+                            <a href=""><img src="../asset/icons/Tiktok-icon.png" alt="" class="h-6"></a>
+                            <a href=""><img src="../asset/icons/Instagram-icon.png" alt="" class="h-6"></a>
+                            <a href=""><img src="../asset/icons/Youtube-icon.png" alt="" class="h-6"></a>  
                         </div>
                         <div class="dark:flex hidden space-x-4 ">
-                            <a href=""><img src="../asset/icons/dark-Tiktok-icon.png" alt="" class="h-8 "></a>
-                            <a href=""><img src="../asset/icons/dark-Instagram-icon.png" alt="" class="h-8 "></a>
-                            <a href=""><img src="../asset/icons/dark-Twitter-icon.png" alt="" class="h-8 " ></a>  
+                            <a href=""><img src="../asset/icons/dark-Tiktok-icon.png" alt="" class="h-6 "></a>
+                            <a href=""><img src="../asset/icons/dark-Instagram-icon.png" alt="" class="h-6 "></a>
+                            <a href=""><img src="../asset/icons/dark-Youtube-icon.png" alt="" class="h-6 " ></a>  
                         </div>
                     </div>
                     <div id="mobile-shop-submenu" class="absolute flex flex-col items-center pb-20 bg-babyPowder dark:bg-darkGray  justify-center  space-y-7 font-extralight text-4xl  sm:self-center  left-0 w-full h-screen  ">
@@ -99,8 +99,8 @@
                                 <img src="../asset/icons/backward-icon.png" alt="" class="inline h-10 "> 
                                 Back</span>  
                             <a href="">Originals</a>
-                            <a href="">Local Shop</a>
-                            <a href="">International Shop</a>
+                            <a href="">Prints</a>
+                            <a href="">Apparell</a>
                     </div>  
 
                 </div>
@@ -325,6 +325,7 @@
         </div>
       </div>
     </main>
+
     <footer class=" bg-darkGray body-font">
       <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
@@ -412,18 +413,6 @@ id="btn-back-to-top"
   <script src="../js/script.js"></script>  
   <script src="../js/home.js"></script>  
   
-  Visitor ISO-3166-alpha2 country code : <b><span id="countryCode"></span></b><br />
-  Visitor country name : <b><span id="countryName"></span></b><br />
   
-  <script src="https://cdn.db-ip.com/js/dbip.js" 
-    data-api-key="p6bcac47ae71f0285cb6343d9697e56e41a2cb92">
-    // Replace the demo key above with your own API key
-  </script>
-  <script>
-    dbip.getVisitorInfo().then(info => {
-      $("#countryCode").text(info.countryCode);
-      $("#countryName").text(info.countryName);
-    });
-  </script>
 </body>
 </html>
